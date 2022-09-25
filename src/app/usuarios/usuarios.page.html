@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="titulo">
+    <ion-text>Controle Finaceiro Pessoal</ion-text>
+  </div>
+  <div class="cadastro">
+    <ion-item button="">
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item button="">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item button="">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </div>
+  <div class="botao">
+    <ion-button (click)="cadastrar()" color="success" expande="full" size="large">
+      <div class="confirmar">
+        <ion-text>Cadastrar</ion-text>
+        <ion-icon name="checkmark-done-outline"></ion-icon>
+      </div>
+    </ion-button>
+  </div>
+</ion-content>

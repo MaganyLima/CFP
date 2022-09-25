@@ -1,0 +1,36 @@
+.titulo{
+  position: relative;
+  top: 60px;
+  text-align: center;
+  ion-text{
+    font-size: 32px;
+    color: gold;
+    font: bold;
+  }
+}
+
+.cadastro{
+position: relative;
+top: 90px;
+}
+.botao{
+  position: relative;
+  top: 150px;
+  text-align: center;
+  ion-button{
+    .confirmar{
+      display: flex;
+      flex-direction: column;
+    ion-text{
+      font-size: 20px;
+    }
+    ion-icon{
+      font-size: 30px;
+      padding-left: 40%;
+
+    }
+    }
+
+  }
+}
+

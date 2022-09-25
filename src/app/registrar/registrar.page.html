@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">Registrar Lançamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-select interface="action-sheet" placeholder="Tipo de registro">
+        <ion-select-option *ngFor=" let tp of tipoRegistro"[value]="tp.tipo">{{tp.tipo}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-input placeholder="Valor R$"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select interface="action-sheet" placeholder="Tipo de registro">
+        <ion-select-option *ngFor=" let ctg of categoriaRegistro"[value]="ctg.nome">{{ctg.nome}}</ion-select-option>
+      </ion-select>
+      </ion-item>
+    <ion-item>
+      <ion-label></ion-label>
+      <ion-input placeholder="Descrição"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> Data</ion-label>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+    </ion-item>
+    <ion-modal keepContentsMounted="true">
+      <ng-template>
+        <ion-datetime id="datetime"presentation="date"
+        showDefaultButtons="true"
+        ></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </ion-list>
+  <div class="botao">
+    <ion-button (click)="confirmar()" color="success" size="large">
+      <div class="confirmar">
+        <ion-text>Confirma</ion-text>
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </div>
+    </ion-button>
+  </div>
+  <div class="botoes">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button (click)="inicio()"expand="block" size="large">
+            <div class="inicio">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-text>Inicio</ion-text>
+            </div>
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button expand="block" size="large">
+            <div class="lança">
+              <ion-icon name="repeat-outline"></ion-icon>
+              <ion-text>Lançam</ion-text>
+            </div>
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button expand="block" size="large">
+            <div class="planeja">
+              <ion-icon name="cash-outline" ></ion-icon>
+              <ion-text>Planejam</ion-text>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+
