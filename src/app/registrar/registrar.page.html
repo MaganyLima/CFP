@@ -6,26 +6,26 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-select interface="action-sheet" placeholder="Tipo de registro">
+      <ion-select [(ngModel)]="tipo"  (interface="action-sheet" placeholder="Tipo de registro">
         <ion-select-option *ngFor=" let tp of tipoRegistro"[value]="tp.tipo">{{tp.tipo}}</ion-select-option>
       </ion-select>
     </ion-item>
       <ion-item>
         <ion-label></ion-label>
-        <ion-input placeholder="Valor R$"></ion-input>
+        <ion-input [(ngModel)]="valor" placeholder="Valor R$"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-select interface="action-sheet" placeholder="Tipo de registro">
+      <ion-select [(ngModel)]="categoria" interface="action-sheet" placeholder="Categoria">
         <ion-select-option *ngFor=" let ctg of categoriaRegistro"[value]="ctg.nome">{{ctg.nome}}</ion-select-option>
       </ion-select>
       </ion-item>
     <ion-item>
       <ion-label></ion-label>
-      <ion-input placeholder="Descrição"></ion-input>
+      <ion-input [(ngModel)]="descricao"  placeholder="Descrição"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label> Data</ion-label>
-      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-label >Data</ion-label>
+        <ion-datetime-button  datetime="datetime"></ion-datetime-button>
     </ion-item>
     <ion-modal keepContentsMounted="true">
       <ng-template>

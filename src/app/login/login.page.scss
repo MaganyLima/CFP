@@ -1,0 +1,59 @@
+ion-header{
+  text-align: center;
+}
+.titulo{
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+ion-text{  
+  font-size: 28px;
+  color: gold;
+}
+.dados{
+  position: relative;
+  top: 50px;
+}
+.botao{
+  text-align: center;
+  ion-button{
+    position: relative;
+    top: 70px;   
+  }
+} 
+.esqueceu{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  ion-text{
+    font-size: 20px;
+    color:darkgray;
+    font: bold;
+  }
+}
+.recupera{
+  position: relative;
+  top: 120px;
+  text-align: center;
+  ion-button{
+    height: 120%;
+    .clique{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      ion-text{
+        font-size: 18px;
+        color: white;
+        padding-top: 10%; 
+        font-weight: bolder;     
+      }
+      ion-icon{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+    }   
+  }
+}
+
+ 

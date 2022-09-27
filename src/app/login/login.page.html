@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">Acessar sua Conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="titulo">
+    <ion-text>Controle Finaceiro Pessoal</ion-text>
+  </div>
+  <div class="dados">
+    <ion-list>
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-input placeholder="Email" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-input placeholder="Senha" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="botao">
+    <ion-button (click)="entrar()"color="success" size="large" expand="full">
+    Entrar
+    </ion-button>
+  </div>
+  <div class="esqueceu">
+    <ion-text>Esqueceu a senha ??</ion-text>
+  </div>
+  <div class="recupera">
+   <ion-button color="success">
+    <div class="clique">
+      <ion-text>Clique Aqui</ion-text>
+      <ion-icon name="thumbs-up-outline"></ion-icon>
+    </div>
+   </ion-button> 
+  </div> 
+</ion-content>
